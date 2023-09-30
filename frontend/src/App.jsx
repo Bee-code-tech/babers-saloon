@@ -1,7 +1,11 @@
-export default function App() {
+import { Home } from './pages'
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold text-green-500">
-      Hello world!
-    </h1>
+    
+      <Home />
+   
   )
 }
+
+export default App;
