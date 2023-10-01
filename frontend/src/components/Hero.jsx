@@ -23,15 +23,14 @@ const Hero = () => {
               className='xl:bg-white xl:whitespace-nowrap relative
             z-10 pr-10
             '>
-              UniverSoul Babers
+              
             </span>
             <br />
             <span className='text-coral-red inline-block mt-3'>Best </span>
             Service
           </h1>
           <p className='font-montserrat text-lg leading-8 text-slate-gray mt-6 mb-14 sm: max-w-sm'>
-            Discover talented babers to give you the best cut. Are you also a
-            professional baber? create your shop now!
+           
           </p>
           <Button label='Explore' iconUrl={arrowRight} />
         </div>
