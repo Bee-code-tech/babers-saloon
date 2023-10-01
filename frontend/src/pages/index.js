@@ -1,9 +1,15 @@
 import Home from './Home'
 import Blog from './Blog'
 import About from './About'
+import SignUp from './SignUp'
+import SignIn from './SignIn'
+import Contact from './Contact'
 
 export {
     Home,
     Blog,
-    About
+    About,
+    SignIn,
+    SignUp, 
+    Contact
 }

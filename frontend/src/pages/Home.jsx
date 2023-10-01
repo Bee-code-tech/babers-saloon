@@ -1,10 +1,10 @@
-import {Hero} from '../components'
+import {Hero, Footer} from '../components'
 const Home = () => {
   return (
     <div>
-        <Hero/>
+      Home
     </div>
-  )
+  );
 }
 
 export default Home

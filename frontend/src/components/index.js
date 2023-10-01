@@ -3,6 +3,7 @@ import Footer from './Footer'
 import Header from './Header'
 import Hero from './Hero'
 import SectionHeader from './SectionHeader'
+import Nav from './Nav'
 
 
 export{
@@ -10,5 +11,6 @@ export{
     Footer,
     Header,
     SectionHeader,
-    Hero
+    Hero,
+    Nav
 }
