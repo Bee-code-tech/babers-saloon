@@ -1,8 +1,8 @@
-import {Header} from '../components'
+import {Hero} from '../components'
 const Home = () => {
   return (
     <div>
-        <Header/>
+        <Hero/>
     </div>
   )
 }
