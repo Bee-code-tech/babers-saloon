@@ -36,7 +36,7 @@
     @apply w-full
   }
   section{
-    @apply py-[35px]
+    @apply py-[35px] px-[15px]
   }
 }
 
