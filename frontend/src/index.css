@@ -9,11 +9,13 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
+
 
 @layer base{
   section{
-    @apply py-[75px] px-[85px]
+    @apply py-[75px] px-[75px]
   }
 }
 @layer components{

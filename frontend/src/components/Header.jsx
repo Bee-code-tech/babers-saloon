@@ -31,7 +31,7 @@ const toggleMenu =()=> menuRef.current.classList.toggle('show-menu')
 
 
   return (
-    <header className='header lg:px-[75px] mt-[20px] px-[17px] flex items-center' ref={headerRef}>
+    <header className='header lg:px-[75px] mt-[20px] px-[17px] flex items-center' data-aos='fade-down' data-aos-delay='100' ref={headerRef}>
       <div className='container'>
         <div className='flex items-center justify-between'>
           {/* logo  */}
