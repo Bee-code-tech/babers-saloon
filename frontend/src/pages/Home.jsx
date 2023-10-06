@@ -3,6 +3,9 @@ import {SectionHeader} from '../components'
 import heroOne from '../assets/img/hero-1.jpg'
 import heroTwo from '../assets/img/hero-2.jpg'
 import heroThree from '../assets/img/hero-3.jpg'
+import Service from '../assets/img/service.jpg'
+import Card from '../assets/img/card.png'
+import Vid from '../assets/img/video-icon.png'
 
 
 
@@ -70,34 +73,85 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <SectionHeader title='Services' subTitle='What we do' />
+      <div className='container items-center justify-center  w-[1100px] flex gap-5 flex-col mx-auto mt-[60px]lg:flex-row md:flex-row'>
+        <div className='w-full flex items-center justify-center relative'>
+          <img
+            src={Service}
+            alt=''
+             className='relative rounded-lg h-[500px] '
+          />
+          <img src={Card} alt="desc" className='
+          absolute
+          w-[200px]
+          top-[74%]
+          right-[-3%]
+          shadow-lg
+          '  />
+          <div className="absolute shadow-lg bg-white w-[240px] rounded-lg p-5 top-[20%] left-[14%] ">
+            <div className="flex justify-between items-center">
+              <p>
+                <span className='font-bold text-para mr-3'>Tue 23</span>
+                <span className="text-para">
+                  10:00 AM
+                </span>
+              </p>
+              <div className="w-6 h-4 p-1 flex items-center rounded-sm bg-green-300">
+                <img src={Vid} alt="icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='  p-8 w-full'>
+          <h1 className='text-center font-bold text-[35px]'>
+            We Offer The Best Platform For Your Salon
+          </h1>
+          <p className='text-para text-center'>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+            doloribus placeat nam aliquam! Ipsa delectus dignissimos, adipisci
+            qui quos, eum officia blanditiis veniam quidem recusandae, excepturi
+            molestias nemo numquam accusantium. Dolorem sapiente placeat velit
+            eos beatae quos cumque expedita quia?
+          </p>
+          <div className='flex flex-center justify-center'>
+            <button className='btn '> Create A Shop</button>
+          </div>
+        </div>
+      </div>
       <SectionHeader title='Categories' subTitle='Registration Guide' />
-      <section className='max-w-[1100px] mx-auto rounded-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-11 lg:gap-[30px] p-[30px]  '  >
-        {
-          categories.map((category, index) => {
-            const {img, title, content, btnText} =category
-            return (<div className="flex items-center flex-col p-8 justify-center w-full bg-white rounded-lg shadow-2xl " key={index}>
-                <img src={img}  width={50} height={40} alt={title} />
-                <h2 className="text-center text-[24px] md:text-[28pz] lg:text-[28px] font-bold my-5 ">
-                  {title}
-                </h2>
-                <p className='
+      <section className='max-w-[1100px] mx-auto rounded-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-11 lg:gap-[30px] p-[30px]  '>
+        {categories.map((category, index) => {
+          const { img, title, content, btnText } = category;
+          return (
+            <div
+              className='flex items-center flex-col p-8 justify-center w-full bg-white rounded-lg shadow-2xl '
+              key={index}>
+              <img src={img} width={50} height={40} alt={title} />
+              <h2 className='text-center text-[24px] md:text-[28pz] lg:text-[28px] font-bold my-5 '>
+                {title}
+              </h2>
+              <p
+                className='
                 text-center
-                '>{content}</p>
-                <button className='
+                '>
+                {content}
+              </p>
+              <button
+                className='
                 bg-black
                 text-white
                 p-2
                 rounded-md
                 px-4
                 mt-6
-                '>{btnText}</button>
+                '>
+                {btnText}
+              </button>
             </div>
-              
-            )
-          })
-        }
+          );
+        })}
       </section>
-      <SectionHeader  title='Featured Barber' subTitle='Top Rated Babers'/>
+      <SectionHeader title='Featured Barber' subTitle='Top Rated Babers' />
     </>
   );
 }

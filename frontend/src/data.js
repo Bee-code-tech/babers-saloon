@@ -3,9 +3,40 @@ import catImg01 from './assets/img/cart.png';
 import catImg02 from './assets/img/clipper.png';
 import catImg03 from './assets/img/forum.png';
 import catImg04 from './assets/img/headphone.png';
+import DoctorsImg from './assets/img/barber01.jpg'
+import DoctorsImg02 from './assets/img/baber02.jpg'
+import DoctorsImg03 from './assets/img/barber03.jpg'
 
 
+export const barbers =[
+  {
+    img: DoctorsImg,
+    name: 'Ryan Jack',
+    badge: 'Top Rated',
+    patients: '+1200 customers',
+    location: 'San Frascico',
+    reviews: 5
 
+  },
+  {
+    img: DoctorsImg02,
+    name: 'Scott Mcall',
+    badge: 'Top Rated',
+    patients: '+1200 customers',
+    location: 'San Frascico',
+    reviews: 5
+
+  },
+  {
+    img: DoctorsImg03,
+    name: 'Austin Dave',
+    badge: 'Top Rated',
+    patients: '+1200 customers',
+    location: 'San Frascico',
+    reviews: 5
+
+  }
+]
 
 
 export const navLinks = [
