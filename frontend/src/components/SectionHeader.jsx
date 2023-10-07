@@ -3,7 +3,7 @@ import React from 'react'
 const SectionHeader = ({title, subTitle}) => {
   return (
     <>
-    <div className="flex items-center flex-col gap-5 justify-center my-8">
+    <div className="flex items-center flex-col gap-5 justify-center my-10">
       <h1 className="text-[40px] lg:text-[55px] md:text-[50px] font-bold text-center">
         {title}
       </h1>

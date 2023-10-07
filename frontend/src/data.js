@@ -3,14 +3,14 @@ import catImg01 from './assets/img/cart.png';
 import catImg02 from './assets/img/clipper.png';
 import catImg03 from './assets/img/forum.png';
 import catImg04 from './assets/img/headphone.png';
-import DoctorsImg from './assets/img/barber01.jpg'
-import DoctorsImg02 from './assets/img/baber02.jpg'
-import DoctorsImg03 from './assets/img/barber03.jpg'
+import baberImg from './assets/img/barber01.jpg'
+import baberImg02 from './assets/img/baber02.jpg'
+
 
 
 export const barbers =[
   {
-    img: DoctorsImg,
+    img: baberImg,
     name: 'Ryan Jack',
     badge: 'Top Rated',
     patients: '+1200 customers',
@@ -19,7 +19,7 @@ export const barbers =[
 
   },
   {
-    img: DoctorsImg02,
+    img: baberImg02,
     name: 'Scott Mcall',
     badge: 'Top Rated',
     patients: '+1200 customers',
@@ -28,7 +28,7 @@ export const barbers =[
 
   },
   {
-    img: DoctorsImg03,
+    img: baberImg02,
     name: 'Austin Dave',
     badge: 'Top Rated',
     patients: '+1200 customers',

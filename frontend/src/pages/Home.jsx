@@ -1,4 +1,4 @@
-import {statistics, categories} from '../data'
+import {statistics, categories, barbers} from '../data'
 import {SectionHeader} from '../components'
 import heroOne from '../assets/img/hero-1.jpg'
 import heroTwo from '../assets/img/hero-2.jpg'
@@ -83,12 +83,13 @@ const Home = () => {
           />
           <img src={Card} alt="desc" className='
           absolute
+          rounded-lg
           w-[200px]
-          top-[74%]
-          right-[-3%]
+          top-[10%]
+          left-[6%]
           shadow-lg
           '  />
-          <div className="absolute shadow-lg bg-white w-[240px] rounded-lg p-5 top-[20%] left-[14%] ">
+          <div className="absolute shadow-lg  bg-white w-[240px] rounded-lg p-4 top-[70%] right-[-3%] ">
             <div className="flex justify-between items-center">
               <p>
                 <span className='font-bold text-para mr-3'>Tue 23</span>
@@ -99,6 +100,17 @@ const Home = () => {
               <div className="w-6 h-4 p-1 flex items-center rounded-sm bg-green-300">
                 <img src={Vid} alt="icon" />
               </div>
+            </div>
+            <div className="w-20 mt-2 p-[3px] rounded-full bg-yellow-100">
+              <p className="text-yellow-300 text-center text-[14px]">
+                Premium 
+              </p>
+            </div>
+            <div className="flex w-full items-center justify-start gap-3 mt-2 ">
+              <span className="h-6 w-6 bg-black rounded-full items-center "></span>
+              <p className="text-[17px]">
+                Drax BaberShop
+              </p>
             </div>
           </div>
         </div>
@@ -152,6 +164,21 @@ const Home = () => {
         })}
       </section>
       <SectionHeader title='Featured Barber' subTitle='Top Rated Babers' />
+      <div className="w-full bg-green-50 flex flex-col items-center justify-center gap-6 lg:flex-row md:flex-row">
+        {
+          barbers.map((barber, index) => {
+            const {img, name, patients, badge, location, review} = barber
+            return (
+              <div className='bg-white shadow-xl  ' key={name}>
+                <div className='flex w-[270px] h-[30px] flex-col items-center my-4'>
+                  <img src={img} alt={name} />
+                </div>
+              </div>
+            );
+          })
+        }
+      </div>
+
     </>
   );
 }
