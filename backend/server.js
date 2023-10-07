@@ -48,19 +48,16 @@ app.use(cors(corsOption));
 //   app.set('trust proxy', 1) // trust first proxy
 //   sess.cookie.secure = true // serve secure cookies
 // }
-app.use(sessions);
+// app.use(sessions);
 
 app.use(express.json());
 //TODO:sessions
 app.use(express.urlencoded({ extended: false }));
 // app.use(methodOverride("_method"));
 
-// app.use("/employee", require("./routes/employee"));
-// // app.use("/shops", require("./routes/shops"));
-// app.use("/menu", require("./routes/menu"));
-// app.use("/branch", require("./routes/branch"));
-// app.use("/role", require("./routes/roles"));
+
 app.use("/users", require("./routes/users"))
+app.use("/shops", require("./routes/shops.route"))
 
 app.use(errorHandler);
 
