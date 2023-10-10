@@ -5,8 +5,40 @@ import catImg03 from './assets/img/forum.png';
 import catImg04 from './assets/img/headphone.png';
 import baberImg from './assets/img/barber01.jpg'
 import baberImg02 from './assets/img/baber02.jpg'
+import customerImg from './assets/img/patient-avatar.png'
 
 
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Naira Marley",
+    img: customerImg,
+    review:
+      "I am satisfied with their services. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem  ",
+  },
+  {
+    id: 2,
+    name: "John Vidal",
+    img: customerImg,
+    review:
+      "I am satisfied with their services. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem  ",
+  },
+  {
+    id: 3,
+    name: "Blessing Scott4",
+    img: customerImg,
+    review:
+      "I am satisfied with their services. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem  ",
+  },
+  {
+    id: 4,
+    name: "Blessing Scott",
+    img: customerImg,
+    review:
+      "I am satisfied with their services. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem  ",
+  },
+];
 
 export const barbers = [
   {

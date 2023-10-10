@@ -1,18 +1,26 @@
 import {Pagination} from 'swiper/modules'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import 'swiper/css'
-import CustomerAvatar from '../assets/img/patient-avatar.png'
 import {HiStar} from 'react-icons/hi'
+import { testimonials } from "../data";
+import SectionHeader from './SectionHeader'
+import 'swiper/css'
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 
 
 const Testimonials = () => {
   return (
     <>
+    <SectionHeader title='Testimonials' subTitle='Our Client Reviews' />
     <div className="mt-[30px] lg:mt-[55px]">
         <Swiper modules={{Pagination}}
+        
          spaceBetween={30}
           slidesPerView={1}
-           pagination={{clickable: true}}
+           pagination={{
+            clickable: true
+        }}
            breakpoints={{
             640: {
                 slidesPerView: 1,
@@ -28,25 +36,37 @@ const Testimonials = () => {
             }
            }}
             > 
-             <SwiperSlide>
-                <div className="px-5 py-[30px] rounded-[13px]">
-                   <div className="flex items-center gap-[13px]">
-                     <img src={CustomerAvatar} alt="" />
-                     <div className="
-                     ">
-                        <h4 className="font-semibold  text-[18px] leading-[30px] text-headingColor ">
-                              Naira Marley
-                        </h4>
-                        <div className="flex items-center gap-[3px] ">
-                            <HiStar className='text-yellowColor w-[18px] h-5 ' />
-                            <HiStar className='text-yellowColor w-[18px] h-5 ' />
-                            <HiStar className='text-yellowColor w-[18px] h-5 ' />
-                            <HiStar className='text-yellowColor w-[18px] h-5 ' />
+            {
+                testimonials.map((testimonial) => {
+                    const {id, name, img, review} = testimonial
+                    return (
+                      <SwiperSlide key={id}>
+                        <div className='px-5 py-[30px] rounded-[13px]'>
+                          <div className='flex items-center gap-[13px]'>
+                            <img src={img} alt='' />
+                            <div
+                              className='
+                     '>
+                              <h4 className='font-semibold  text-[18px] leading-[30px] text-headingColor '>
+                                {name}
+                              </h4>
+                              <div className='flex items-center gap-[3px] '>
+                                <HiStar className='text-yellowColor w-[18px] h-5 ' />
+                                <HiStar className='text-yellowColor w-[18px] h-5 ' />
+                                <HiStar className='text-yellowColor w-[18px] h-5 ' />
+                                <HiStar className='text-yellowColor w-[18px] h-5 ' />
+                                <HiStar className='text-yellowColor w-[18px] h-5 ' />
+                              </div>
+                            </div>
+                          </div>
+                          <p className='text-[16px] leading-7 mt-4 text-textColor font-[400] '>
+                            {review}
+                          </p>
                         </div>
-                     </div>
-                   </div>
-                </div>
-             </SwiperSlide>
+                      </SwiperSlide>
+                    );
+                })
+            }
         </Swiper>
     </div>
     </>
