@@ -3,6 +3,9 @@ import Footer from './Footer'
 import Header from './Header'
 import SectionHeader from './SectionHeader'
 import Nav from './Nav'
+import BarberCard from './BarberCard'
+import BarberList from './BarberList'
+import Testimonials from './Testimonials'
 
 
 export{
@@ -10,5 +13,8 @@ export{
     Footer,
     Header,
     SectionHeader,
-    Nav
+    Nav,
+    BarberCard,
+    BarberList,
+    Testimonials
 }

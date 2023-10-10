@@ -1,5 +1,5 @@
-import {statistics, categories, barbers} from '../data'
-import {SectionHeader} from '../components'
+import {statistics, categories} from '../data'
+import {SectionHeader, BarberList} from '../components'
 import heroOne from '../assets/img/hero-1.jpg'
 import heroTwo from '../assets/img/hero-2.jpg'
 import heroThree from '../assets/img/hero-3.jpg'
@@ -163,21 +163,9 @@ const Home = () => {
           );
         })}
       </section>
-      <SectionHeader title='Featured Barber' subTitle='Top Rated Babers' />
-      <div className="w-full bg-green-50 flex flex-col items-center justify-center gap-6 lg:flex-row md:flex-row">
-        {
-          barbers.map((barber, index) => {
-            const {img, name, patients, badge, location, review} = barber
-            return (
-              <div className='bg-white shadow-xl  ' key={name}>
-                <div className='flex w-[270px] h-[30px] flex-col items-center my-4'>
-                  <img src={img} alt={name} />
-                </div>
-              </div>
-            );
-          })
-        }
-      </div>
+      <section className="container mx-auto items-center justify-center">
+        <BarberList />
+      </section>
 
     </>
   );

@@ -8,41 +8,45 @@ import baberImg02 from './assets/img/baber02.jpg'
 
 
 
-export const barbers =[
+export const barbers = [
   {
+    id: 1,
     img: baberImg,
-    name: 'Ryan Jack',
-    badge: 'Top Rated',
-    patients: '+1200 customers',
-    location: 'San Frascico',
-    reviews: 5
-
+    name: "Ryan Jack",
+    badge: "Top Rated",
+    customers: "+1200 customers",
+    location: "San Frascico",
+    reviews: 5,
+    total: 454
   },
   {
+    id: 2,
     img: baberImg02,
-    name: 'Scott Mcall',
-    badge: 'Top Rated',
-    patients: '+1200 customers',
-    location: 'San Frascico',
-    reviews: 5
-
+    name: "Scott Mcall",
+    badge: "Top Rated",
+    customers: "+1200 customers",
+    location: "San Frascico",
+    reviews: 5,
+    total: 454
   },
   {
+    id: 3,
     img: baberImg02,
-    name: 'Austin Dave',
-    badge: 'Top Rated',
-    patients: '+1200 customers',
-    location: 'San Frascico',
-    reviews: 5
-
-  }
-]
+    name: "Austin Dave",
+    badge: "Top Rated",
+    customers: "+1200 customers",
+    location: "San Frascico",
+    reviews: 5,
+    total: 454
+  },
+];
 
 
 export const navLinks = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
   { path: "/blog", label: "Blog" },
+  { path: "/barbers", label: "Find a Barber" },
   { path: "/contact", label: "Contact" },
 ];
 

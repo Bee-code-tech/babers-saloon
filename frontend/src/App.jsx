@@ -1,4 +1,3 @@
-import { Home } from './pages'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Layout from './layouts/Layout'
