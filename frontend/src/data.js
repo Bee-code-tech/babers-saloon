@@ -3,7 +3,7 @@ import catImg01 from './assets/img/cart.png';
 import catImg02 from './assets/img/clipper.png';
 import catImg03 from './assets/img/forum.png';
 import catImg04 from './assets/img/headphone.png';
-import baberImg from './assets/img/barber01.jpg'
+import baberImg from './assets/img/about-1.jpg'
 import baberImg02 from './assets/img/baber02.jpg'
 import customerImg from './assets/img/patient-avatar.png'
 
@@ -107,7 +107,7 @@ export const barbers = [
   },
   {
     id: 2,
-    img: baberImg02,
+    img: baberImg,
     name: "Scott Mcall",
     badge: "Top Rated",
     customers: "+1200 customers",
@@ -117,7 +117,7 @@ export const barbers = [
   },
   {
     id: 3,
-    img: baberImg02,
+    img: baberImg,
     name: "Austin Dave",
     badge: "Top Rated",
     customers: "+1200 customers",

@@ -12,7 +12,7 @@ const Testimonials = () => {
   return (
     <>
     <SectionHeader title='Testimonials' subTitle='Our Client Reviews' />
-    <div className="mt-[30px] lg:mt-[55px]">
+    <div className="mt-[10px] lg:mt-[20px]">
         <Swiper modules={{Pagination}}
         
          spaceBetween={30}

@@ -6,6 +6,7 @@ import SignIn from './SignIn'
 import Contact from './Contact'
 import NotFound from './NotFound'
 import Barbers from './Barbers'
+import BarbersDetails from './BarbersDetails'
 
 export {
     Home,
@@ -15,6 +16,6 @@ export {
     SignUp, 
     Contact,
     Barbers,
-    NotFound
-
+    NotFound,
+    BarbersDetails
 }

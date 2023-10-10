@@ -6,13 +6,13 @@ const BarberCard = ({barber}) => {
   return (
     <div className='p-3 lg:p-5 flex items-center justify-center'>
       <div  className='min-w-[300px]'>
-        <div className=' h-[300px] w-full flex items-center justify-start lg:justify-start md:justify-start'>
+        <div className=' h-auto w-full flex items-center justify-start lg:justify-start md:justify-start'>
           <img src={img} alt={name} className='w-[200px]   rounded-lg ' />
         </div>
-        <h2 className='text-[18px] leading-[30px]  lg:text-[26px] lg:leading-13 text-headingColor font-[700] mt-4 '>
+        <h2 className='text-[18px] leading-[30px]  lg:text-[26px] lg:leading-13 text-headingColor font-[700] mt-2 '>
           {name}
         </h2>
-        <div className='mt-2 flex lg:mt-4 items-center justify-between'>
+        <div className='mt-1 flex lg:mt-2 items-center justify-between'>
           <span className='bg-red-300 text-red-700 py-1 px-3 lg:py-1 lg:px-6 text-[12px] rounded leading-4 lg:text-[16px] lg:leading-7 font-semibold '>
             {badge}
           </span>
@@ -33,7 +33,7 @@ const BarberCard = ({barber}) => {
           </div>
         </div>
 
-        <div className='flex w-full mt-[18px] lg:mt-5  items-center justify-between  '>
+        <div className='flex w-full mt-[12px] lg:mt-3  items-center justify-between  '>
           <div>
             <h3 className='text-[16px] leading-7 lg:text-[18px] lg:leading-[30px] font-semibold text-headingColor my-2 '>
               {customers}
