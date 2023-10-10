@@ -4,6 +4,7 @@ import About from './About'
 import SignUp from './SignUp'
 import SignIn from './SignIn'
 import Contact from './Contact'
+import NotFound from './NotFound'
 import Barbers from './Barbers'
 
 export {
@@ -13,5 +14,7 @@ export {
     SignIn,
     SignUp, 
     Contact,
-    Barbers
+    Barbers,
+    NotFound
+
 }

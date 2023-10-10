@@ -1,11 +1,10 @@
-import {Pagination} from 'swiper/modules'
+import {Pagination} from 'swiper'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {HiStar} from 'react-icons/hi'
 import { testimonials } from "../data";
 import SectionHeader from './SectionHeader'
-import 'swiper/css'
+import 'swiper/swiper-bundle.css'
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 
 

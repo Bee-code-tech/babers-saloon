@@ -6,8 +6,81 @@ import catImg04 from './assets/img/headphone.png';
 import baberImg from './assets/img/barber01.jpg'
 import baberImg02 from './assets/img/baber02.jpg'
 import customerImg from './assets/img/patient-avatar.png'
+import {AiFillYouTube, AiOutlineInstagram, AiFillGithub} from "react-icons/ai"
+import { RiLinkedinFill } from "react-icons/ri";
 
 
+
+
+
+export const socialLinks =[
+
+  {
+    path:'client-social link',
+    icon: <AiFillYouTube className='group-hover:text-white w-4 h-5' />
+  },
+  {
+    path:'client-social link',
+    icon: <AiFillGithub className='group-hover:text-white w-4 h-5' />
+  },
+  {
+    path:'client-social link',
+    icon: <AiOutlineInstagram className='group-hover:text-white w-4 h-5' />
+  },
+  {
+    path:'client-social link',
+    icon: <RiLinkedinFill className='group-hover:text-white w-4 h-5' />
+  }
+]
+
+export const quickLinks = [
+  {
+    path: '/home',
+    display: 'Home'
+  },
+  {
+    path: '/about',
+    display: 'About us'
+  },
+  {
+    path: '/blog',
+    display: 'Blog'
+  },
+  {
+    path: '/barbers',
+    display: 'Find A Barber'
+  }
+]
+
+export const quickLinks02 = [
+  {
+    path: "/find-abarber-shp",
+    display: "Community",
+  },
+  {
+    path: "/",
+    display: "Contact Us",
+  }
+ 
+];
+export const quickLinks03 = [
+  {
+    path: "/find-abarber-shp",
+    display: "Find A Barber",
+  },
+  {
+    path: "/",
+    display: "Book a service",
+  },
+  {
+    path: "/home",
+    display: "Home",
+  },
+  {
+    path: "/home",
+    display: "Find A Location",
+  },
+];
 
 export const testimonials = [
   {
