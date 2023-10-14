@@ -1,4 +1,5 @@
 import {pricing} from '../data'
+import SectionHeader from './SectionHeader'
 
 
 const Pricing = () => {
