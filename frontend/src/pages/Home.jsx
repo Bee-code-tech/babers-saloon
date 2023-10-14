@@ -1,5 +1,5 @@
 import {statistics, categories} from '../data'
-import {SectionHeader, BarberList, Testimonials} from '../components'
+import {SectionHeader, BarberList, Testimonials, Pricing} from '../components'
 import heroOne from '../assets/img/hero-1.jpg'
 import heroTwo from '../assets/img/hero-2.jpg'
 import heroThree from '../assets/img/hero-3.jpg'
@@ -168,6 +168,9 @@ const Home = () => {
       </section>
       <section className="container mx-auto items-center justify-center">
         <Testimonials/>
+      </section>
+      <section className="container mx-auto items-center justify-center">
+        <Pricing />
       </section>
 
     </>

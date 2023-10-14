@@ -4,6 +4,7 @@ import Header from './Header'
 import SectionHeader from './SectionHeader'
 import Nav from './Nav'
 import BarberCard from './BarberCard'
+import Pricing from './Pricing'
 import BarberList from './BarberList'
 import Testimonials from './Testimonials'
 
@@ -16,5 +17,6 @@ export{
     Nav,
     BarberCard,
     BarberList,
-    Testimonials
+    Testimonials,
+    Pricing
 }

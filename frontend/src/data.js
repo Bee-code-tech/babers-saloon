@@ -172,3 +172,51 @@ export const categories = [
     btnText: "Request for Assistance",
   },
 ];
+
+export const pricing = [
+  {
+    title: "Standard Gold",
+    price: 0,
+    currency: "USD",
+    frequency: "/month",
+    description: "The essential package for your best work for client",
+    features: [
+      "Access to store",
+      "3 products listing",
+      "Additional barber (crew)",
+      "Contracts available",
+    ],
+    cta: "Get Started",
+    recommended: false,
+  },
+  {
+    title: "Premium Diamond",
+    price: 25,
+    currency: "USD",
+    frequency: "/month",
+    description: "The essential package for your best work for client",
+    features: [
+      "Access to store",
+      "20 products listing",
+      "10 Additional barber (crew)",
+      "Contracts available",
+    ],
+    cta: "Get Started",
+    recommended: true,
+  },
+  {
+    title: "Enterprise Kyawthuite",
+    price: 40,
+    currency: "USD",
+    frequency: "/month",
+    description: "The essential package for your best work for client",
+    features: [
+      "Access to store",
+      "3 products listing",
+      "Additional barber (crew)",
+      "Contracts available",
+    ],
+    cta: "Get Started",
+    recommended: false,
+  },
+];
