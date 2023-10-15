@@ -1,6 +1,6 @@
 import {pricing} from '../data'
 import SectionHeader from './SectionHeader'
-
+ import  {AiOutlineCheck}  from 'react-icons/ai';
 
 const Pricing = () => {
    
@@ -23,7 +23,10 @@ const Pricing = () => {
           return (
             <div
               key={price}
-              className='border border-slate-200 shadow-lg mt-7 p-8 bg-white rounded-2xl relative flex flex-col'>
+              className='border border-slate-200 shadow-lg mt-7 p-8 bg-white rounded-2xl relative flex flex-col'
+              data-aos='zoom-in'
+              data-aos-duration='1500'
+              data-aos-delay='600'>
               {recommended && (
                 <p
                   className='absolute top-0 bg-black text-white px-4 py-1 text-sm font-semibold tracking-wide
@@ -54,7 +57,9 @@ const Pricing = () => {
                       <li
                         key={i}
                         className='text-sm text-textColor leading-5 flex  '>
-                        <span className='h-5 w-5 bg-black text-white shrink-0 rounded-full'></span>
+                        <span className='h-5 w-5 bg-black text-white shrink-0 rounded-full flex items-center p-1 justify-center'>
+                          <AiOutlineCheck className='text-white' />
+                        </span>
                         <span className='ml-3'> {feature}</span>
                       </li>
                     );
@@ -70,7 +75,7 @@ const Pricing = () => {
                    
                    ${
                      recommended
-                       ? " text-white bg-slate-700 hover:bg-slate-400"
+                       ? " text-white bg-black hover:bg-slate-400"
                        : " text-headingColor bg-slate-50 hover:bg-slate-100 "
                    }
                   block px-6 py-4 font-semibold leading-4 text-center rounded-lg shadow-md mt-12 `}>

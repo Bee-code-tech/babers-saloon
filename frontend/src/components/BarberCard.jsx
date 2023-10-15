@@ -5,11 +5,16 @@ const BarberCard = ({barber}) => {
     const { id, img, name, customers, badge, location, reviews, total } = barber;
   return (
     <div className='p-3 lg:p-5 flex items-center justify-center'>
-      <div  className='min-w-[300px]'>
-        <div className=' h-auto w-full flex items-center justify-start lg:justify-start md:justify-start'>
-          <img src={img} alt={name} className='w-[200px]   rounded-lg ' />
+      <div
+        className='min-w-[300px]'
+        data-aos='zoom-in'
+        data-aos-duration='1500'
+        data-aos-delay='600'
+        >
+        <div className=' h-auto w-full flex items-center justify-center lg:justify-center md:justify-center'>
+          <img src={img} alt={name} className='w-[300px]   rounded-lg ' />
         </div>
-        <h2 className='text-[18px] leading-[30px]  lg:text-[26px] lg:leading-13 text-headingColor font-[700] mt-2 '>
+        <h2 className='text-[18px] leading-[30px]  lg:text-[26px] lg:leading-8 text-headingColor font-[700] mt-2 '>
           {name}
         </h2>
         <div className='mt-1 flex lg:mt-2 items-center justify-between'>

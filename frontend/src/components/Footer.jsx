@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
             {/* Copyright  */}
             <p className='text-[16px] leading-7 font-[400] text-textColor mt-4 '>
-              Copyright {year} Developed by Beetech | Babawale Al-Ameen O
+              Copyright {year} Developed by SMAC TEAM
             </p>
             <div className='flex items-center gap-3 mt-4'>
               <Link

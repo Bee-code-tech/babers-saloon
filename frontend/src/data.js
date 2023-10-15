@@ -137,9 +137,9 @@ export const navLinks = [
 ];
 
 export  const statistics = [
-  { value: "60+", label: "Brands" },
-  { value: "70+", label: "Shops" },
-  { value: "100%", label: "Satisfaction" },
+  { value: 60, label: "Brands", suffix:'+' },
+  { value: 70, label: "Shops", suffix:'+' },
+  { value: 100, label: "Satisfaction" , suffix:'%' },
 ];
 
 export const categories = [

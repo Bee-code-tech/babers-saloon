@@ -4,7 +4,7 @@ import baberImg from "../assets/img/about-1.jpg";
 import star from "../assets/img/Star.png";
 
 const BarbersDetails = () => {
-    const [tab,setTab] = useState('about')
+    const [tab,  setTab] = useState('about')
   return (
     <section className='px-5 mx-auto container'>
       <div className='grid md:grid-cols-2 gap-[50px]'>
