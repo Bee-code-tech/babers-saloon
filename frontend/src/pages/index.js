@@ -7,6 +7,7 @@ import Contact from './Contact'
 import NotFound from './NotFound'
 import Barbers from './Barbers'
 import BarbersDetails from './BarbersDetails'
+import Feedback from './Feedback'
 
 export {
     Home,
@@ -17,5 +18,6 @@ export {
     Contact,
     Barbers,
     NotFound,
-    BarbersDetails
+    BarbersDetails,
+    Feedback
 }
